@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root {
+    --main-clr: #10cab7;
+}
+
+/* Start Header */
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+header .header-container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-container .logo {
+    width: 100px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+header .header-container .logo img {
+    width: 65px;
+}
+
+header .header-container .menu {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header .header-container .menu .menu-icon {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    cursor: pointer;
+
+}
+
+header .header-container .menu .menu-icon:hover.menu-icon div:nth-child(2) {
+    width: 100%;
+}
+
+header .header-container .menu .menu-icon div {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+header .header-container .menu .menu-icon:hover~.menu-links {
+    display: inline;
+}
+
+header .header-container .menu .menu-icon div:nth-child(2) {
+    margin: 5px 0;
+    width: 60%;
+    transition: width .4s;
+}
+
+header .header-container .menu .menu-links {
+    display: none;
+    position: absolute;
+    bottom: -200px;
+    right: 10px;
+    background-color: #f8f8f8;
+    width: 220px;
+    z-index: 100;
+}
+
+
+header .header-container .menu .menu-links ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+header .header-container .menu .menu-links ul::after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    height: 0;
+    width: 0;
+    border: 20px solid #f8f8f8;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    right: 0;
+    top: -40px;
+}
+
+header .header-container .menu .menu-links ul li {
+    padding: 15px 10px;
+    transition: margin .4s;
+}
+
+header .header-container .menu .menu-links ul li:hover {
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+header .header-container .menu .menu-links ul li:not(:last-child) {
+    border-bottom: 1px solid #d6d6d6;
+}
+
+header .header-container .menu .menu-links ul li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+}
+
+/* End Header */
