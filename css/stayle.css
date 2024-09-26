@@ -162,14 +162,18 @@ header .header-container .menu .menu-links ul li a {
     background-image: url(../image/landing.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
 .loading-section .text-intro {
     text-align: center;
     text-transform: capitalize;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    max-width: 100%;
 }
 
 .loading-section .text-intro h1 {
@@ -188,3 +192,49 @@ header .header-container .menu .menu-links ul li a {
 }
 
 /* End Loading Section */
+/* start featur  */
+
+.featur {
+    padding: 60px 0;
+    background-color: var(--secondary-clr);
+}
+
+
+.featur .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.featur .container .icons-container {
+    padding: 20px;
+    text-align: center;
+}
+
+
+.featur .container .icons-container i {
+    color: var(--main-clr);
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.featur .container .icons-container h2 {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin: 25px;
+}
+
+
+.featur .container .icons-container p {
+    line-height: 1.8;
+    font-size: 18px;
+    color: #777;
+}
+
+/* 
+/* edn featur section */
