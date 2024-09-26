@@ -1,3 +1,5 @@
+/* Start global */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,11 +11,39 @@
 
 :root {
     --main-clr: #10cab7;
+    --secondary-clr: #f6f6f6;
 }
+
+/* Start Media  */
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    header .header-container {
+        width: 750px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    header .header-container {
+        width: 970px;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    header .header-container {
+        width: 1170px;
+    }
+}
+
+/* End Media  */
+
+/* End Global */
 
 /* Start Header */
 header {
-    height: 60px;
+    height: 63px;
 }
 
 header .header-container {
@@ -24,7 +54,7 @@ header .header-container {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 header .header-container img {
@@ -79,7 +109,7 @@ header .header-container .menu .menu-links {
 }
 
 
-header .header-container .menu .menu-links ul {
+.menu .menu-links ul {
     list-style: none;
     display: none;
     width: 100%;
@@ -124,27 +154,37 @@ header .header-container .menu .menu-links ul li a {
 
 /* End Header */
 
-/* Start Media  */
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    header .header-container {
-        width: 750px;
-    }
+/* Start Loading Section */
+.loading-section {
+    width: 100%;
+    height: calc(100vh - 63px);
+    margin-top: 0;
+    background-image: url(../image/landing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    header .header-container {
-        width: 970px;
-    }
+.loading-section .text-intro {
+    text-align: center;
+    text-transform: capitalize;
 }
 
-/* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    header .header-container {
-        width: 1170px;
-    }
+.loading-section .text-intro h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--main-clr);
+    margin-bottom: 20px;
 }
 
-/* End Media  */
+.loading-section .text-intro p {
+    max-width: 350px;
+    font-size: 19px;
+    line-height: 2;
+    font-weight: 400;
+}
+
+/* End Loading Section */
