@@ -18,26 +18,51 @@
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    header .header-container {
+
+    header .header-container,
+    .featur .container {
         width: 750px;
     }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    header .header-container {
+
+    header .header-container,
+    .featur .container {
         width: 970px;
     }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    header .header-container {
+
+    header .header-container,
+    .featur .container {
         width: 1170px;
     }
 }
 
 /* End Media  */
+/* start component */
+.spacial-header {
+    font-size: 90px;
+    color: #e7e7e7;
+    font-weight: 800;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: -2px;
+    margin: 0;
+}
+
+.spacial-header+p {
+    font-size: 20px;
+    text-align: center;
+    color: #777;
+    margin-top: -30px;
+}
+
+/* end component */
 
 /* End Global */
 
@@ -234,7 +259,14 @@ header .header-container .menu .menu-links ul li a {
     line-height: 1.8;
     font-size: 18px;
     color: #777;
+    font-weight: 400;
 }
 
-/* 
-/* edn featur section */
+/* end featur section */
+
+/* start service section */
+.service {
+    padding: 60px 0;
+}
+
+/* end service section */
