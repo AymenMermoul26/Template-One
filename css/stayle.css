@@ -14,18 +14,6 @@ body {
     font-family: "Work Sans", system-ui;
 }
 
-ul li {
-    list-style: none;
-    display: inline-block;
-}
-
-a {
-    text-decoration: none;
-    text-transform: capitalize;
-    color: #000;
-    transition: padding-left .4s;
-
-}
 
 /* Start Media */
 /* Small devices (landscape phones, 576px and up) */
@@ -64,6 +52,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 65px;
 }
 
 header .container {
@@ -79,9 +68,6 @@ header .container img {
     width: 70px;
 }
 
-header .links-container {
-    position: relative;
-}
 
 .icon {
     width: 30px;
@@ -106,34 +92,16 @@ header .links-container {
     transition: width .6s;
 }
 
-.icon:hover div:nth-child(2) {
+.links-container:hover div:nth-child(2) {
     width: 100%;
 }
 
 
-header .links-container .links {
-    position: absolute;
-    background-color: #f4f4f4;
-    right: 20px;
-    width: 190px;
-}
 
-header .links-container .links li {
-    display: block;
-    padding: 13px;
-}
 
-header .links-container .links li:not(:last-child) {
-    border-bottom: 1px solid #c3c3c3;
-}
 
-header .links-container .links li:hover a {
-    padding-left: 25px;
-}
 
-header .links-container .links:hover {
-    cursor: pointer;
-}
+
 
 
 /* End Style Header  */
