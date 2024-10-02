@@ -186,3 +186,42 @@ header .links-container {
 }
 
 /* End Style Loading Section */
+
+/* Start Style Featur Section */
+.feature-section {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+
+.feature-section .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.feature-section .container .feature {
+    text-align: center;
+    padding: 20px;
+}
+
+.feature-section .feature i {
+    color: #10cab7;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.feature-section .feature h2 {
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.feature-section .feature p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #777;
+}
+
+/* End Style Featur Section */
