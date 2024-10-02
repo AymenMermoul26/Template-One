@@ -110,7 +110,7 @@ header .links-container {
     margin: 0;
     padding: 0;
     min-width: 190px;
-    background-color: #eee;
+    background-color: #f7f7f7;
     list-style: none;
     position: absolute;
     right: 0;
@@ -125,7 +125,7 @@ header .links-container {
     height: 0;
     width: 0;
     border: 15px solid transparent;
-    border-bottom-color: #eee;
+    border-bottom-color: #f7f7f7;
     top: -29px;
     right: 0;
 }
@@ -151,3 +151,38 @@ header .links-container {
 }
 
 /* End Style Header  */
+
+/* Start Style Loading Section */
+.loading-section {
+    height: calc(100vh - 64px);
+    background-image: url(../image/landing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.loading-section .loading-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.loading-section .loading-text h1 {
+    margin: 0;
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #10cab7;
+    margin-bottom: 25px;
+}
+
+.loading-section .loading-text p {
+    max-width: 310px;
+    font-size: 20px;
+    line-height: 1.7;
+    text-transform: capitalize;
+}
+
+/* End Style Loading Section */
