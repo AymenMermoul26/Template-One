@@ -169,6 +169,8 @@ header .links-container {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 310px;
+    max-width: 100%;
 }
 
 .loading-section .loading-text h1 {
@@ -176,13 +178,13 @@ header .links-container {
     font-size: 50px;
     text-transform: capitalize;
     color: #10cab7;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .loading-section .loading-text p {
     max-width: 310px;
     font-size: 20px;
-    line-height: 1.7;
+    line-height: 1.6;
     text-transform: capitalize;
 }
 
