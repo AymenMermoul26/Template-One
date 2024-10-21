@@ -259,6 +259,29 @@ header .links-container {
     margin-top: 60px;
 }
 
+.parts {
+    position: relative;
+}
+
+.service-features .parts:last-child::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 130%;
+    background-color: #2c2f2f;
+    top: -50px;
+    right: 10px;
+    z-index: -1;
+}
+
+
+img {
+    width: 250px;
+    margin-left: 55px;
+    position: relative;
+}
+
+
 
 
 /* End Style Services Section */
