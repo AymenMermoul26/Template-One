@@ -58,7 +58,7 @@ body {
 }
 
 .special-heading {
-    color: #e5e5e5;
+    color: #dbdbdb;
     text-align: center;
     font-size: 100px;
     text-transform: capitalize;
@@ -329,3 +329,32 @@ header .links-container {
 
 
 /* End Style Services Section */
+
+
+/* Start Style Portfolio Section */
+.portfolio-section {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+    ;
+
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.port-col {
+    background-color: #10cab7;
+}
+
+.prot-img {
+    width: 100%;
+}
+
+.port-img img {
+    width: 100%;
+}
+
+/* End Style Portfolio Section */
