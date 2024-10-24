@@ -58,7 +58,7 @@ body {
 }
 
 .special-heading {
-    color: #dbdbdb;
+    color: #eeeeee;
     text-align: center;
     font-size: 100px;
     text-transform: capitalize;
@@ -343,18 +343,33 @@ header .links-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
+    margin-top: 100px;
 }
 
-.port-col {
-    background-color: #10cab7;
+.portfolio-container .port-col {
+    background-color: #fff;
 }
 
-.prot-img {
+.portfolio-container .port-col .port-img {
     width: 100%;
 }
 
-.port-img img {
+.portfolio-container .port-col .port-img img {
     width: 100%;
+}
+
+.portfolio-container .port-col .port-text {
+    padding: 20px;
+}
+
+.portfolio-container .port-col .port-text h3 {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.portfolio-container .port-col .port-text p {
+    color: #777;
+    line-height: 1.6;
 }
 
 /* End Style Portfolio Section */
