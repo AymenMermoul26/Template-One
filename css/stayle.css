@@ -373,3 +373,99 @@ header .links-container {
 }
 
 /* End Style Portfolio Section */
+
+/* Start Styel About Section */
+.about-section {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.about-container {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-container .image-side {
+    width: 250px;
+    position: relative;
+}
+
+.about-container .image-side::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    top: -25px;
+    z-index: -1;
+    left: -30px;
+    height: 450px;
+    background-color: #eeeeee;
+}
+
+.about-container .image-side::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 300px;
+    border-left: 80px solid #10cab7;
+    border-bottom: 80px solid #10cab7;
+    top: -25px;
+    right: -130px;
+    z-index: -1;
+}
+
+.about-container .image-side img {
+    max-width: 100%;
+}
+
+.about-container .about-text {
+    flex-basis: calc(100% - 500px);
+}
+
+.about-container .about-text p {
+    line-height: 2.5;
+}
+
+.about-container .about-text>p:first-child {
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.about-container .about-text>p:last-child {
+    color: #777;
+    margin-top: 25px;
+}
+
+
+.about-container .about-text hr {
+    width: 50%;
+    height: 1px;
+    background-color: #10cab7;
+    border: none;
+}
+
+@media (max-width:988px) {
+
+    .about-container .image-side::after,
+    .about-container .image-side::before {
+        display: none;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-container .image-side {
+        margin: 40px auto;
+    }
+
+    .about-container .about-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* End Styel About Section */
