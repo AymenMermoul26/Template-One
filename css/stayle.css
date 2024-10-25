@@ -469,3 +469,12 @@ header .links-container {
 }
 
 /* End Styel About Section */
+
+
+/* Start Style Contact Section */
+.contact-section {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+}
+
+/* End Style Contact Section */
