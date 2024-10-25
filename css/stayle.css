@@ -477,4 +477,28 @@ header .links-container {
     background-color: #f7f7f7;
 }
 
+.contact-container {
+    margin: 100px 0 40px 0;
+    text-align: center;
+}
+
+.contact-container p:first-child {
+    font-size: 35px;
+    font-weight: 800;
+    color: #0f2840;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+
+.contact-container p:nth-child(2) {
+    font-size: 33px;
+    font-weight: 800;
+    color: #10cab7;
+    margin-bottom: 20px;
+}
+
+.contact-container p i {
+    margin: 0 5px;
+}
+
 /* End Style Contact Section */
