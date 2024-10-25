@@ -501,4 +501,20 @@ header .links-container {
     margin: 0 5px;
 }
 
+.footer {
+    padding: 30px 0;
+    background-color: #0f2840;
+    text-align: center;
+}
+
+.footer p {
+    color: white;
+    font-size: 18px;
+}
+
+.footer p span {
+    color: #10cab7;
+    font-weight: 600;
+}
+
 /* End Style Contact Section */
